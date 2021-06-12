@@ -1,5 +1,4 @@
 @import '../../../../../colors'
-
 .product
     width: 25%
     position: relative
@@ -27,6 +26,9 @@
             overflow: hidden
         img
             width: 100%
+        .quantity
+            display: flex
+            justify-content: space-between
         .desc-container
             padding: 10px
             min-height: 80px
@@ -73,7 +75,7 @@
         position: absolute
         padding: 10px
         display: flex
-        justify-content: center
+        justify-content: space-between
         bottom: 0
 @media screen and (max-width: 768px)
     .right-container

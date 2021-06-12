@@ -25,11 +25,16 @@
         </button>
         <div *ngIf="product.quantity > 0" class="mobile">
           <div class="quantity">
-            <span (click)="minusQuantity(product)" class="minus circle">-</span>
-            <span aria-label="product quantity added to cart" class="count">{{
-              product.quantity
-            }}</span>
-            <span (click)="addToCart(product)" class="circle">+</span>
+            <span class="price">MRP Rs.{{ product.product.price }}</span>
+            <span>
+              <span (click)="minusQuantity(product)" class="minus circle"
+                >-</span
+              >
+              <span aria-label="product quantity added to cart" class="count">{{
+                product.quantity
+              }}</span>
+              <span (click)="addToCart(product)" class="circle">+</span>
+            </span>
           </div>
         </div>
       </div>
@@ -59,9 +64,12 @@
       </button>
       <div *ngIf="product.quantity > 0" class="tablet">
         <div class="quantity">
-          <span (click)="minusQuantity(product)" class="minus circle">-</span>
-          <span class="count">{{ product.quantity }}</span>
-          <span (click)="addToCart(product)" class="circle">+</span>
+          <span>MRP Rs.{{ product.product.price }}</span>
+          <span>
+            <span (click)="minusQuantity(product)" class="minus circle">-</span>
+            <span class="count">{{ product.quantity }}</span>
+            <span (click)="addToCart(product)" class="circle">+</span>
+          </span>
         </div>
       </div>
     </div>
