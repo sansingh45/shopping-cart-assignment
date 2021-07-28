@@ -1,0 +1,6 @@
+{
+  "hosting": {
+    "site": "sabkabazar",
+    "public": "dist/sabkabazar/browser"
+  }
+}

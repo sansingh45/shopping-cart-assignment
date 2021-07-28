@@ -53,7 +53,7 @@
         (click)="addToCart(product)"
         class="buy-now desktop"
       >
-        Buy Now
+        Buy Now <span class="visuallyhidden">{{ product.product.name }}</span>
       </button>
       <button
         *ngIf="product.quantity === 0"
